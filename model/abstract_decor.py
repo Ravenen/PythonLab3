@@ -6,7 +6,7 @@ from model.decor_type import DecorType
 
 class AbstractDecor(ABC):
 
-    def __init__(self, color: str, price_in_uah: float, decor_type: Set[DecorType]):
+    def __init__(self, color: str = None, price_in_uah: float = None, decor_type: Set[DecorType] = None):
         self.color = color
         self.price_in_uah = price_in_uah
         self.decor_type = sorted(decor_type)

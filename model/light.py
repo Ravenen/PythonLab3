@@ -6,8 +6,8 @@ from model.decor_type import DecorType
 
 class Light(AbstractDecor):
 
-    def __init__(self, color: str, price_in_uah: float, decor_type: Set[DecorType], max_voltage: float,
-                 number_of_bulbs: int):
+    def __init__(self, color: str = None, price_in_uah: float = None, decor_type: Set[DecorType] = None, max_voltage: float = None,
+                 number_of_bulbs: int = None):
         super(Light, self).__init__(color, price_in_uah, decor_type)
         self.max_voltage = max_voltage
         self.number_of_bulbs = number_of_bulbs
