@@ -1,7 +1,7 @@
-from enum import IntEnum
+from enum import Enum
 
 
-class DecorType(IntEnum):
+class DecorType(Enum):
 
     INDOOR_TREE = 1
     OUTDOOR_TREE = 2
