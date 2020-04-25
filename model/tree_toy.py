@@ -10,3 +10,6 @@ class TreeToy(AbstractDecor):
         super(TreeToy, self).__init__(color, price_in_uah, decor_type)
         self.form = form
         self.volume_in_cm_cube = volume_in_cm_cube
+
+    def __repr__(self) -> str:
+        return f"TreeToy[{super().__repr__()}, form: {self.form}, volume_in_cm_cube: {self.volume_in_cm_cube}"

@@ -11,3 +11,6 @@ class Garland(AbstractDecor):
         super(Garland, self).__init__(color, price_in_uah, decor_type)
         self.length_in_metres = length_in_metres
         self.is_natural = is_natural
+
+    def __repr__(self) -> str:
+        return f"Garland[{super().__repr__()}, length: {self.length_in_metres}, is_natural: {self.is_natural}"
