@@ -1,10 +1,9 @@
-from abc import ABC
 from typing import Set
 
 from model.decor_type import DecorType
 
 
-class AbstractDecor(ABC):
+class AbstractDecor(object):
 
     def __init__(self, color: str = None, price_in_uah: float = None, decor_type: Set[DecorType] = None):
         self.color = color
