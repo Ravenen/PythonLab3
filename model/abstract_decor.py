@@ -10,6 +10,11 @@ class AbstractDecor(object):
         self.price_in_uah = price_in_uah
         self.decor_type = decor_type
 
+    def set_fields(self, color: str = None, price_in_uah: float = None, decor_type: Set[DecorType] = None):
+        self.color = color
+        self.price_in_uah = price_in_uah
+        self.decor_type = decor_type
+
     def check_criterion(self, criterion: Set[DecorType]) -> bool:
         return self.decor_type.issuperset(criterion)
 
